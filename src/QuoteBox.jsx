@@ -7,13 +7,18 @@ const quotesList = [{text: "To live is the rarest thing in the world. Most peopl
 {text: "Be kind, for everyone you meet is fighting a hard battle.", author: "– Plato"},
 {text: "Self-awareness and self-love matter. Who we are is how we lead.", author: " – Brene Brown"}
 ]
+//-----------------------------------------//
+/* you can also use another function for generating random index then put that function to the setter setQuote */
+const randomIndex = () => Math.floor(Math.random() * quotesList.length);
 
+//----------------------------------------//
 function QuoteBox (props = { quote, handleNewQuote }) {
 
     const [quote, setQuote] = useState(quotesList[0]);
 
     const handleNewQuote = () => {
-        setQuote(quotesList[Math.floor(Math.random()* quotesList.length)])
+        /*setQuote(quotesList[Math.floor(Math.random()* quotesList.length)])*/
+        setQuote(quotesList[randomIndex()]);
     }
 
     return (
