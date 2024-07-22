@@ -30,7 +30,7 @@ function QuoteBox (props = { quote, handleNewQuote }) {
             <p id="text">{quote.text}</p>
             <h2 id="author">{quote.author}</h2>
             <div className="actions">
-                <button id="new-quote" onClick={handleNewQuote} >new quote</button>
+                <button id="new-quote" class="button" onClick={handleNewQuote} >new quote</button>
                 <a href="twitter.com/intent/tweet" id="tweet-quote" target="_top" >tweet</a>
             </div>          
         </div>
