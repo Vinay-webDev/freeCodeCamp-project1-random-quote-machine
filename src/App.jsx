@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import QuoteBox from './QuoteBox.jsx'; 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <QuoteBox quote={quote} handleNewQuote={handleNewQuote} />
+      <QuoteBox />
     </>
   )
 }

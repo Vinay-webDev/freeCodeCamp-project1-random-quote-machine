@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 
-
 function QuoteBox (props = { quote, handleNewQuote}) {
 
     const [quote, setQuote] = useState({text: "hello bro😀🔥👋", author: "jack😀👍"});
 
+    const handleNewQuote = () => {
+
+    }
 
     return (
         <div id="quote-box">
             <p id="text">{quote.text}</p>
             <h2 id="author">{quote.author}</h2>
-            <button id="new-quote">new quote</button>
+            <button id="new-quote" onClick={handleNewQuote} >new quote</button>
             <a href="twitter.com/intent/tweet" id="tweet-quote" target="_blank" >tweet</a>
         </div>
     );
