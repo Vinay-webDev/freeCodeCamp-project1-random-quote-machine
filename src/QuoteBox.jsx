@@ -9,10 +9,11 @@ const quotesList = [{text: "To live is the rarest thing in the world. Most peopl
 ]
 //-----------------------------------------//
 /* you can also use another function for generating random index then put that function to the setter setQuote */
-/*const randomIndex = () => Math.floor(Math.random() * quotesList.length); */
+const randomIndex = () => Math.floor(Math.random() * quotesList.length); 
+/*
 function randomIndex () {
     Math.floor(Math.random() * quotesList.length);
-}
+}*/
 
 //----------------------------------------//
 function QuoteBox (props = { quote, handleNewQuote }) {
@@ -28,8 +29,10 @@ function QuoteBox (props = { quote, handleNewQuote }) {
         <div id="quote-box">
             <p id="text">{quote.text}</p>
             <h2 id="author">{quote.author}</h2>
-            <button id="new-quote" onClick={handleNewQuote} >new quote</button>
-            <a href="twitter.com/intent/tweet" id="tweet-quote" target="_blank" >tweet</a>
+            <div className="actions">
+                <button id="new-quote" onClick={handleNewQuote} >new quote</button>
+                <a href="twitter.com/intent/tweet" id="tweet-quote" target="_top" >tweet</a>
+            </div>          
         </div>
     );
 }

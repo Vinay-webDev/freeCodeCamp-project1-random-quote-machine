@@ -1,12 +1,14 @@
 
-import QuoteBox from './QuoteBox.jsx'; 
+import QuoteBox from './QuoteBox.jsx'
 
 function App() {
   
 
   return (
     <>
-      <QuoteBox />
+      <div class="main">
+        <QuoteBox />
+      </div>
     </>
   )
 }

@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    font-size: 20px;
+    margin: 15px 0px;
+    color: hsl(0, 0%, 32%);
+}
+p {
+    margin: 0;
+    font-size: 20px;
+}
+.main {
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(165, 100%, 50%);
+}
+#quote-box {
+    width: 450px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+.actions {
+    display: flex;
+    align-items: center;
+}
