@@ -2,11 +2,15 @@ import { useState } from 'react'
 import QuoteBox from './QuoteBox.jsx'; 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [quote, setQuote] = useState();
+
+  const handleNewQuote = () => {
+    
+  }
 
   return (
     <>
-      <QuoteBox/>
+      <QuoteBox quote={quote} handleNewQuote={handleNewQuote} />
     </>
   )
 }
