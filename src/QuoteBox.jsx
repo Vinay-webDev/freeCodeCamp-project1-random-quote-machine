@@ -10,7 +10,7 @@ const quotesList = [{text: "To live is the rarest thing in the world. Most peopl
 
 function QuoteBox (props = { quote, handleNewQuote}) {
 
-    const [quote, setQuote] = useState({text: "hello bro😀🔥👋", author: "jack😀👍"});
+    const [quote, setQuote] = useState(quotesList[2]);
 
     const handleNewQuote = () => {
 
