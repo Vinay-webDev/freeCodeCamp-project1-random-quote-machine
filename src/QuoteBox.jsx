@@ -9,7 +9,10 @@ const quotesList = [{text: "To live is the rarest thing in the world. Most peopl
 ]
 //-----------------------------------------//
 /* you can also use another function for generating random index then put that function to the setter setQuote */
-const randomIndex = () => Math.floor(Math.random() * quotesList.length);
+/*const randomIndex = () => Math.floor(Math.random() * quotesList.length); */
+function randomIndex () {
+    Math.floor(Math.random() * quotesList.length);
+}
 
 //----------------------------------------//
 function QuoteBox (props = { quote, handleNewQuote }) {
