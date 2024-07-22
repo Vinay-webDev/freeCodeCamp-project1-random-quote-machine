@@ -1,6 +1,11 @@
 function QuoteBox () {
     return (
-        <div>hello bro🔥😀</div>
+        <div id="quote-box">
+            <p id="text">Quote: hello bro😀🔥👋</p>
+            <h2 id="author">Author: jack😀👍</h2>
+            <button id="new-quote">new quote</button>
+            <a href="twitter.com/intent/tweet" id="tweet-quote">tweet</a>
+        </div>
     );
 
 }
