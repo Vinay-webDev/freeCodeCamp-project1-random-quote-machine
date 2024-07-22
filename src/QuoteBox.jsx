@@ -1,5 +1,11 @@
+import React, { useState } from 'react';
+
 
 function QuoteBox (props = { quote, handleNewQuote}) {
+
+    const [quote, setQuote] = useState({text: "hello bro😀🔥👋", author: "jack😀👍"});
+
+
     return (
         <div id="quote-box">
             <p id="text">{quote.text}</p>
