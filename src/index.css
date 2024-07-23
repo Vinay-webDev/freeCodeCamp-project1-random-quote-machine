@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 100;
     padding: 0;
 }
 body {
@@ -16,10 +16,10 @@ p {
 }
 .main {
     display: flex;
-    width: 100vh;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    width: 100vh;
+    height: 100vh;
     background-color: hsl(165, 100%, 50%);
 }
 #quote-box {
